@@ -1,0 +1,9 @@
+{% if menu %}
+  <ul class="navbar-nav bd-navbar-nav flex-row">
+  {% for item in menu %}
+  <li class="nav-item">
+    <a class="nav-link{{ item.class }}" href="{{ item.link }}" title="{{ item.page_title }}">{{ item.title }}</a>
+  </li>
+  {% endfor %}
+  </ul>
+{% endif %}

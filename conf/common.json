@@ -1,0 +1,23 @@
+{
+  "engine": {
+    "doc_root": "/var/www/yourski.ru/test.yourski.ru/public/",
+    "tpl_path": "/var/www/yourski.ru/test.yourski.ru/templates/",
+    "cache_path": "/var/www/yourski.ru/test.yourski.ru/var/cache/",
+    "tpl_ext": "html.twig"
+  },
+  "parser": {
+    "chunksize": 25,
+    "delay": 0.15,
+    "timeout": 5.5,
+    "baseUrl": "http://www.world-art.ru/cinema/",
+    "infoPage": "cinema.php",   
+    "historyPage": "votes_history.php",
+    "topPage": "rating_top.php",
+    "topSeriesPage": "rating_tv_top.php"
+  },
+  "files": {
+    "movies": { 
+        "posters": "images/movies/"
+    }
+  }
+}

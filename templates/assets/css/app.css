@@ -1,0 +1,113 @@
+hr.dashed {
+    border-top: 2px dashed #999;
+}
+
+hr.dotted {
+    border-top: 2px dotted #999;
+}
+
+hr.solid {
+    border-top: 2px solid #999;
+}
+
+
+hr.hr-text {
+  position: relative;
+    border: none;
+    height: 1px;
+    background: #999;
+}
+
+hr.hr-text::before {
+    content: attr(data-content);
+    display: inline-block;
+    background: #fff;
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: #999;
+    border-radius: 30rem;
+    padding: 0.2rem 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.bd-toc {
+  position: sticky;
+  top: 4rem;
+  height: calc(100vh - 4rem);
+  overflow-y: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: .875rem;
+  order: 2;
+  position: -webkit-sticky;
+  -ms-flex-order: 2;
+}
+
+.bd-navbar {
+  background-color: #7952b3;
+}
+
+#rate-table_wrapper > .row {
+  margin-bottom: 1rem;
+}
+
+#rate-table_wrapper th, #rate-table_wrapper td {
+  padding: 1px 3px;
+}
+
+th.sorting {
+  cursor: default;
+}
+
+tr.odd {
+  background-color: #f9f9f9;
+}
+
+tr.even {
+  background-color: #fff;
+}
+
+tr.odd td.sorting_1, tr.odd td.sorting_2, tr.odd td.sorting_3 {
+  background-color: #f0f0f0;
+}
+
+tr.even td.sorting_1, tr.even td.sorting_2, tr.even td.sorting_3 {
+  background-color: #fafafa;
+}
+
+#rate-table_wrapper .column-position {
+  width: 3vw;
+  text-align: right;
+}
+
+#rate-table_wrapper .column-year {
+  width: 4vw;
+  text-align: center;
+}
+
+#rate-table_wrapper .column-country {
+  width: 12vw;
+}
+
+#rate-table_wrapper .column-rate {
+  width: 7vw;
+  text-align: right;
+}
+
+#rate-table_wrapper .column-votes {
+  width: 5.2vw;
+  text-align: right;
+}
+
+#rate-table_wrapper .column-rate_calc {
+  width: 6vw;
+  text-align: right;
+}
+
+.dataTables_length {
+  display: flex;
+}

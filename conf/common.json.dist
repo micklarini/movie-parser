@@ -1,0 +1,23 @@
+{
+  "engine": {
+    "doc_root": "<path_to_www_public>",
+    "cache_path": "<path_to_www_cache>",
+    "tpl_path": "<path_to_templates>",
+    "tpl_ext": "html.twig"
+  },
+  "parser": {
+    "chunksize": 25,
+    "delay": 0.15,
+    "timeout": 5.5,
+    "baseUrl": "http://www.world-art.ru/cinema/",
+    "infoPage": "cinema.php",   
+    "historyPage": "votes_history.php",
+    "topPage": "rating_top.php",
+    "topSeriesPage": "rating_tv_top.php"
+  },
+  "files": {
+    "movies": { 
+        "posters": "images/movies/"
+    }
+  }
+}

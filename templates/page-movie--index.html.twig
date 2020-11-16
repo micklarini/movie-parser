@@ -1,0 +1,14 @@
+{%extends "page.html.twig" %}
+{% block sidebar %}{% endblock %}
+{% block main %}
+<main class="col bd-content" role="main">
+  <h1 class="bd-title" id="content">{{ page.title }}</h1>
+  <ul class="bd-mainnav">
+  {% for cat in categories %}
+    {% if cat.page_title is not empty %}
+    <li><a href="{{ cat.link }}">{{ cat.page_title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</main>
+{% endblock %}

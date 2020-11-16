@@ -1,0 +1,31 @@
+{
+  "name": "mlarini-testwork",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "webpack --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "author": "Michael Larin",
+  "license": "Private",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.1.1",
+    "css-loader": "^4.3.0",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.1.0",
+    "imports-loader": "^1.1.0",
+    "mini-css-extract-plugin": "^0.11.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "datatables.net-bs4": "^1.10.22",
+    "datatables.net-responsive-bs4": "^2.2.6",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}

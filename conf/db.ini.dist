@@ -1,0 +1,5 @@
+[connection]
+dsn = 'mysql:host=127.0.0.1;dbname=db_name'
+username = 'dev'
+passwd = 'password'
+options[charset] = 'utf8mb4'

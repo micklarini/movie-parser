@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col col-md-5 col-sm-12 col-xs-12 p-3">
+      <img src="/{{ movie.image }}" class="w-300" alt="{{ movie.title }}"/>
+    </div>
+    <div class="col col-md-7 col-sm-12 container">
+      <div class="row">
+        <h1 class="col">{{ movie.title }}</h1>
+      </div>
+      <div class="row">
+        <span class="col col-6">Производство</span>
+        <span class="col col-6">{{ movie.country }}</span>
+      </div>
+      <div class="row">
+        <span class="col col-6">Формат</span>
+        <span class="col col-6">{{ movie.category }} {% if movie.section is not empty %}/ {{ movie.section }}{% endif %}</span>
+      </div>
+      <div class="row">
+        <span class="col col-6">Год</span>
+        <span class="col col-6">{{ movie.prod_year }}</span>
+      </div>
+      <div class="row">
+        <div class="col divider"><hr class="dotted" /></div>
+      </div>
+      <div class="row">
+        <span class="col col-6">Средний балл</span>
+        <span class="col col-6">{% if movie.averageRate is empty %}-{% else %}{{ movie.averageRate|number_format(1, '.', ',') }}{% endif %} из&nbsp;10</span>
+      </div>
+      <div class="row">
+        <span class="col col-6">Проголосовало</span>
+        <span class="col col-6">{{ movie.totalVotes|default('0') }}&nbsp;чел.</span>
+      </div>
+      <div class="row">
+        <span class="col col-6">Позиция в рейтинге:</span>
+        <span class="col col-6">{{ movie.lastPosition.position|default('-') }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col font-weight-bold">Краткое содержание</div>
+  </div>
+  <div class="row">
+    <div class="col divider"><hr class="dotted" /></div>
+  </div>
+  <div class="row">
+     <span class="col col-auto">{{ movie.abstract }}</span>
+  </div>
+</div>
